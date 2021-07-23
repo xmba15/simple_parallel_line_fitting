@@ -54,7 +54,7 @@ def estimate(xys_list):
 def is_inlier(xy, coeffs, threshold):
     """
     xy: point(x,y)
-    coeffs: ((n0,n1), c) where n0*x+n1*y+c=0 is the line equation
+    coeffs: (n0,n1,c) where n0*x+n1*y+c=0 is the line equation
     """
     x0, y0 = xy
     n0, n1, c = coeffs

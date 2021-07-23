@@ -22,26 +22,56 @@
 
 - [x] fitting of two parallel lines, demo code
 - [x] fitting of two parallel parabola, demo code
-- [ ] add julia code (just to practice julia)
+- [x] add julia code (just to practice julia)
 
 ## 🎛  Dependencies
 ***
+
+- python
+
 ```bash
-    python -m pip install -r requirements.txt
+python -m pip install -r requirements.txt
+```
+
+- julia
+
+```bash
+pkg> activate .
+pkg> instantiate
 ```
 
 ## :running: How to Run ##
 ***
 
-- demo for fitting of two parallel lines
-```
-    python demo_parallel_line_fitting.py
-```
+- python
 
-- demo for fitting of two parabolas
-```
+    + demo for fitting of two parallel lines
+
+    ```bash
+    python demo_parallel_line_fitting.py
+    ```
+
+    + demo for fitting of two parabolas
+
+    ```bash
     python demo_parallel_parabola_fitting.py
-```
+    ```
+
+- julia
+
+    + demo for fitting of two parallel lines
+
+    ```bash
+    julia --project=. demo_parallel_line_fitting.jl
+    ```
+
+    + demo for fitting of two parallel parabolas
+
+    ```bash
+    julia --project=. demo_parallel_parabola_fitting.jl
+    ```
+
+**You can also call the demo scripts from julia REPL with include syntax. This will reduce the latency for code loading and compilation for the second run on REPL. However, you will always suffer from loading and compilation latency if running directly from command line.**
 
 ## :gem: References ##
 ***
